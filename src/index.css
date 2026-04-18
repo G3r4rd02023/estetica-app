@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Plus Jakarta Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8fafc;
+    @apply transition-colors duration-300;
+  }
+
+  html.dark {
+    background-color: #020617; /* slate-950 */
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    color: #0f172a;
+    background:
+      radial-gradient(circle at top, rgba(238, 69, 138, 0.08), transparent 28%),
+      linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+    @apply transition-colors duration-300;
+  }
+
+  html.dark body {
+    color: #f8fafc;
+    background:
+      radial-gradient(circle at top, rgba(238, 69, 138, 0.15), transparent 30%),
+      linear-gradient(180deg, #020617 0%, #0f172a 100%);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Outfit", "Segoe UI", sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+    @apply transition-colors duration-200;
+  }
+}
