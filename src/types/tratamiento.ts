@@ -6,6 +6,7 @@ export interface Tratamiento {
   precioVenta: number;
   estado: string;
   valores: TratamientoCampo[];
+  fechaCreacion?: string;
 }
 
 export interface TratamientoCampo {

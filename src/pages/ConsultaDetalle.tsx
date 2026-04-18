@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo, Fragment, type ChangeEvent, type FormEvent } from 'react';
+import React, { useEffect, useState, useMemo, type ChangeEvent, type FormEvent } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Layout } from '../components/Layout';
 import { api, CONSULTAS_ENDPOINTS, TRATAMIENTOS_ENDPOINTS, CONSENTIMIENTOS_ENDPOINTS, CATALOGOS_ENDPOINTS } from '../services/api';
